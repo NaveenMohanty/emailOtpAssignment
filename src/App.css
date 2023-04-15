@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a1a;
+  font-family: 'Roboto', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #2e2e2e;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  max-width: 350px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2 {
+  margin: 0 0 20px;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+input[type="email"] {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #5e5c5c;
+  color: #fff;
+}
+
+.otp-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.otp-btns input[type="text"] {
+  width: 20%;
+  padding: 15px;
+  margin-bottom: 20px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #5e5c5c;
+  color: #fff;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 15px;
+  background-color: #ffffff;
+  color: #3c3c3c;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+  background-color: #5e5c5c;
+  color: #fff;
+}
+
+.required-text {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #ccc;
+  font-weight: 400;
+  text-align: left;
+}
+
+.required-text span {
+  font-weight: 600;
+  color: #eeeaea;
+  cursor: pointer;
+}
+
+.required-text.error {
+  color: #e13030;
+}
+
+.mb {
+  margin-bottom: 20px;
 }
